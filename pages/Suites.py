@@ -7,17 +7,17 @@ import json
 
 
 st.set_page_config(layout="wide")
-st.set_page_config(initial_sidebar_state="collapsed")
-st.markdown(
-    """
-<style>
-    [data-testid="collapsedControl"] {
-        display: none
-    }
-</style>
-""",
-    unsafe_allow_html=True,
-)
+# st.set_page_config(initial_sidebar_state="collapsed")
+# st.markdown(
+#     """
+# <style>
+#     [data-testid="collapsedControl"] {
+#         display: none
+#     }
+# </style>
+# """,
+#     unsafe_allow_html=True,
+# )
 # st.set_page_config(page_title="SnowDQ | Suites", page_icon="static/favicon.ico", layout="wide", initial_sidebar_state="collapsed")
 navWithLogo()
 suitsDf = load_data(st.secrets.DQ_TABLE.SUITE)
