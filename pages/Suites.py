@@ -6,7 +6,7 @@ from streamlit_extras.switch_page_button import switch_page
 import json
 
 
-
+st.set_page_config(layout="wide")
 # st.set_page_config(page_title="SnowDQ | Suites", page_icon="static/favicon.ico", layout="wide", initial_sidebar_state="collapsed")
 navWithLogo()
 suitsDf = load_data(st.secrets.DQ_TABLE.SUITE)
