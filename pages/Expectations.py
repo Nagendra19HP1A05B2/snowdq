@@ -4,7 +4,7 @@ import json
 from snowflake_client import load_data
 from utils import *
 from streamlit_extras.switch_page_button import switch_page
-st.set_page_config(layout="wide")
+st.set_page_config(layout="wide",initial_sidebar_state="collapsed")
 # st.set_page_config(initial_sidebar_state="collapsed")
 # st.markdown(
 #     """
