@@ -6,7 +6,7 @@ from streamlit_extras.switch_page_button import switch_page
 import json
 
 
-st.set_page_config(layout="wide")
+st.set_page_config(layout="wide",initial_sidebar_state="collapsed"))
 # st.set_page_config(initial_sidebar_state="collapsed")
 # st.markdown(
 #     """
@@ -18,7 +18,7 @@ st.set_page_config(layout="wide")
 # """,
 #     unsafe_allow_html=True,
 # )
-st.set_page_config(page_title="SnowDQ | Suites", page_icon="static/favicon.ico", layout="wide", initial_sidebar_state="collapsed")
+
 navWithLogo()
 suitsDf = load_data(st.secrets.DQ_TABLE.SUITE)
 suitsDf['MODIFIED_DATE'] = pd.to_datetime(suitsDf['MODIFIED_DATE'])
