@@ -399,6 +399,18 @@ def addSuite_callback(selected_row, projectId):
                             padding: calc(1em - 1px)}"""):
         
         with st.container():
+            st.markdown(
+    """
+    <style>
+    .css-jet8i1 {
+        max-height: 1000px; /* Set the maximum height of the container */
+        overflow-y: auto; /* Enable vertical scrollbar when content exceeds the height */
+        color:black;
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
             group_id = []
             added_suites = []
             suitsDf = load_data(st.secrets.DQ_TABLE.SUITE)
