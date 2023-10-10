@@ -402,7 +402,7 @@ def addSuite_callback(selected_row, projectId):
             st.markdown(
     """
     <style>
-    .css-jet8i1 {
+    .css-1halgxx {
         max-height: 1000px; /* Set the maximum height of the container */
         overflow-y: auto; /* Enable vertical scrollbar when content exceeds the height */
         color:black;
