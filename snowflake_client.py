@@ -41,7 +41,7 @@ def load_data(table_name):
 
 def delete_project(project_name, session=session):
     # query = f"""UPDATE {settings.SNOWFLAKE_GROUPS} SET ACTIVE={False} WHERE ID={group_id}"""
-    sql_delete_project = f"UPDATE {st.secrets.DQ_TABLE.PROJECT} SET ACTIVE={False} WHERE NAME='{project_name}';"
+    sql_delete_project = f"delete {st.secrets.DQ_TABLE.PROJECT} WHERE NAME='{project_name}';"
 
     # Execute the SQL INSERT statement
     session.sql(sql_delete_project).collect()
